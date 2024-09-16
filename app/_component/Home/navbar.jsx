@@ -31,13 +31,13 @@ function Navbar({ setSearchQuery }) {
 
   return (
     <nav className="flex justify-between items-center px-5 py-2 border z-10 bg-[#f8e4d9]">
-      <div>Menti Logo Goes Here</div>
+      <div>MENTI</div>
       <div>
         <div className="border border-gray-300 rounded-md bg-white px-3 py-2 justify-center items-center flex gap-3">
           <Search />
           <input
             type="search"
-            placeholder="Search mentors..."
+            placeholder="Search..."
             className="outline-none border-0 w-96 h-9 bg-white"
             onChange={handleSearchChange}
             onFocus={focushandeler}

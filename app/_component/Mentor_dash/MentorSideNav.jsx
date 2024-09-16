@@ -1,45 +1,59 @@
-import React from 'react'
-import Link from 'next/link'
-import { BookOpen, Calendar, Home, Inbox, Projector, School,  } from 'lucide-react';
+"use client"; // Add this at the very top
 
-function MentorSideNav() {
+import React from 'react';
+import Link from 'next/link';
+import { Home, Award, BarChart, CalendarCheck, User, Settings, HelpCircle, Link2 } from 'lucide-react'; // Import Link2 icon
+
+function MentorSidenav() {
   const menu = [
     {
       id: 1,
       name: 'Home',
       icon: Home,
-      href: '/mentordash',
+      href: "/mentor-dashboard",
     },
     {
       id: 2,
-      name: 'Dashboard',
-      icon: BookOpen,
-      href: '/dashboard',
+      name: "Courses I'm Excel",
+      icon: Award,
+      href: '/courses-excel',
     },
     {
       id: 3,
-      name: 'Classes',
-      icon: School,
-      href: '/lesson',
+      name: 'Course Analytics',
+      icon: BarChart,
+      href: '/courseanalysis',
     },
     {
       id: 4,
-      name: 'Inbox',
-      icon: Inbox,
-      href: '/inbox',
+      name: 'Calendar',
+      icon: CalendarCheck,
+      href: '/update-calendar',
     },
     {
       id: 5,
-      name: 'Meeting',
-      icon: Projector,
-      href: '/meeting',
+      name: 'Update Profile',
+      icon: User,
+      href: '/update-profile',
     },
     {
       id: 6,
-      name: 'Calendar',
-      icon: Calendar,
-      href: '/calendar',
-    }
+      name: 'MentorLink',
+      icon: Link2, 
+      href: '/mentor-link', 
+    },
+    {
+      id: 7,
+      name: 'Settings',
+      icon: Settings,
+      href: '/settings',
+    },
+    {
+      id: 8,
+      name: 'Help',
+      icon: HelpCircle,
+      href: '/help',
+    },
   ];
 
   return (
@@ -51,14 +65,14 @@ function MentorSideNav() {
             <div 
               className='group flex gap-3 mt-2 p-3 text-[18px] items-center text-gray-500 cursor-pointer hover:bg-[#1A4870] hover:text-white rounded-md transition-all ease-in-out duration-200'
             >
-              <item.icon className='group-hover:animate-bounce' />
+              <item.icon className='group-hover:animate-bounce'/>
               <h2>{item.name}</h2>
             </div>
           </Link>
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default MentorSideNav;
+export default MentorSidenav;

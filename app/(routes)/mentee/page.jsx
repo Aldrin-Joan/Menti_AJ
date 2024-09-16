@@ -1,8 +1,8 @@
-import Navbar from '@/app/_component/Home/navbar'
 import React from 'react'
 import Sidenav from '@/app/_component/mentee_dash/Sidenav'
 import Maincontent from '@/app/_component/mentee_dash/Maincontent'
 import Calendar from '@/app/_component/mentee_dash/Calendar'
+import Navbar from '@/app/_component/Home/navbar'
 
 function page() {
   return (

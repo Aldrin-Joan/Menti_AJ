@@ -1,5 +1,5 @@
 "use client";
-import Navbar from '@/app/_component/Home/navbar'
+import Navbar from '@/app/_component/Home/Navbar'
 import Teachers from '@/app/_component/mentee/teachers'
 import Sidenav from '@/app/_component/mentee_dash/Sidenav'
 import { useSearchParams } from 'next/navigation';

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Navbar from "../../_component/Home/navbar";
+import Navbar from "../../_component/Home/Navbar";
 import Teachers from "../../_component/mentee/teachers";
 import { useSearchParams } from "next/navigation";
 
