@@ -1,4 +1,6 @@
+import UserProfilePage from "@/app/(auth)/user-profile/[[...user-profile]]/page";
 import Navbar from "@/app/_component/Home/navbar";
+import MenteeDashboard from "@/app/_component/mentee_dash/MenteeDashboard";
 import Sidenav from "@/app/_component/mentee_dash/Sidenav";
 import React from "react";
 
@@ -7,7 +9,8 @@ function dashboard() {
     <Navbar/>
     <div className='container mx-auto flex mt-6'>
       <Sidenav/> 
-      <h1>DASHBOARD</h1>
+      {/* <MenteeDashboard/> */}
+    <UserProfilePage />
     </div>
   </div>;
 }
