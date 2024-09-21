@@ -1,6 +1,7 @@
+// app/layout.js
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
+import ClientLayout from "./ClientLayout"; // Import the ClientLayout component
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,26 +12,26 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <head>
-          <style>{`
-            .cl-internal-1dauvpw, .cl-internal-1hp5nqm , .selection-tag, .number-of-selection{
-              display: none !important;
-            }
-            html body .cl-internal-1dauvpw , .cl-internal-1hp5nqm{
-              display: none !important;
-            }
-            .cl-rootBox .cl-card .cl-internal-1dauvpw {
-              display: none !important;
-            }
-            .correct, .incorrect{
+    <html lang="en">
+      <head>
+        <style>{`
+          .cl-internal-1dauvpw, .cl-internal-1hp5nqm , .selection-tag, .number-of-selection{
+            display: none !important;
+          }
+          html body .cl-internal-1dauvpw , .cl-internal-1hp5nqm{
+            display: none !important;
+          }
+          .cl-rootBox .cl-card .cl-internal-1dauvpw {
+            display: none !important;
+          }
+          .correct, .incorrect{
             background:green !important;
-            }
-          `}</style>
-        </head>
-        <body className={inter.className}>{children}</body>
-      </html>
-    </ClerkProvider>
+          }
+        `}</style>
+      </head>
+      <body className={inter.className}>
+        <ClientLayout>{children}</ClientLayout>
+      </body>
+    </html>
   );
 }

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation'; 
-import Navbar from '@/app/_component/Home/navbar';
+import Navbar from '@/app/_component/Home/Navbar';
 import MentorSidenav from '@/app/_component/mentor_dash/MentorSidenav';
 import CourseMain from '@/app/_component/courses/CourseMain';
 const GridComponent = () => {

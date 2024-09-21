@@ -5,22 +5,22 @@ import { useUser } from "@clerk/nextjs";
 function Hero() {
   const user = useUser();
   return (
-    <section className="flex h-[90vh] px-10 bg-[#fff5f1]">
+    <section className="flex h-[90vh] px-10 bg-[#EBF4F6]">
       <div className="w-1/2 flex flex-col justify-center">
-        <h1 className="text-5xl">
+        <h1 className="text-5xl text-[#071952]">
           Find a Suitable Mentor for your Best Interest
         </h1>
-        <p className="mt-4">
+        <p className="mt-4 text-[#071952]">
           Discover a world of{" "}
           <span className="span-div text-black">knowledge</span> at your
-          fingertips and embarks on a transformative learning journey like never
+          fingertips and embark on a transformative learning journey like never
           before
         </p>
         <div className="my-10 flex gap-6 ">
           {user.isSignedIn === false ? (
             <>
               <a href="/login">
-                <button className="border px-5 py-3 rounded-md bg-blue-600  hover:bg-blue-700 text-white">
+                <button className="border px-5 py-3 rounded-md bg-[#088395] hover:bg-[#37B7C3] text-white">
                   Get Started
                 </button>
               </a>
@@ -30,8 +30,8 @@ function Hero() {
             </>
           ) : (
             <>
-              <a href="/dashboard">
-                <button className="border px-5 py-3 rounded-md bg-blue-600  hover:bg-blue-700 text-white">
+              <a href="/mentee">
+                <button className="border px-5 py-3 rounded-md bg-[#088395] hover:bg-[#37B7C3] text-white">
                   Dashboard
                 </button>
               </a>
@@ -52,12 +52,12 @@ function Hero() {
           </div>
           <div>
             <h1 className="text-lg font-semibold">300+</h1>
-            <h1>classNamees (regularly)</h1>
+            <h1>Classes (regularly)</h1>
           </div>
         </div>
         <hr className="my-10" />
         <div>
-          <h1>Popular Courses</h1>
+          <h1 className="text-[#071952]">Popular Courses</h1>
           <div className="flex gap-5 mt-5 ">
             <h1 className="py-2 px-5 rounded-lg text-white bg-orange-400 w-max cursor-pointer">
               DSA{" "}

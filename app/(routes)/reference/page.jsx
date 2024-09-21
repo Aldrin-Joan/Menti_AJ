@@ -3,7 +3,7 @@
 import React from "react";
 import MentorSidenav from "@/app/_component/mentor_dash/MentorSidenav";
 import References from "@/app/_component/courses/references";
-import Navbar from "@/app/_component/Home/navbar";
+import Navbar from "@/app/_component/Home/Navbar";
 
 const TaskPage = () => {
   return (

@@ -8,36 +8,34 @@ import { TopIconsAndCaption } from './TopIconsAndCaption';
 
 const Maincontenttask = () => {
   const [activePage, setActivePage] = useState(''); 
+
   // Function to set active component
   const handleNavigation = (page) => {
     setActivePage(page); // Update active page based on button click
   };
 
   return (
-    <div className="relative flex-1 bg-[#f8e4d9] shadow-md rounded-lg p-8 mx-6">
+    <div className="relative flex-1 bg-[#EBF4F6] shadow-md rounded-lg p-8 mx-6"> {/* Background color changed */}
       
       <TopIconsAndCaption />
 
-     
       {activePage === '' && (
         <div className="text-center">
-         
-          <h1 className="text-3xl font-bold mb-8">
+          <h1 className="text-3xl font-bold mb-8 text-[#071952]"> {/* Title color changed */}
             What would you like to upload?
           </h1>
 
-          
           <div className="flex space-x-8 justify-center">
             <button
-              className='flex items-center px-12 py-4 bg-[#1F316F] text-white rounded-full shadow hover:bg-[#1A4870] transition duration-200 group text-lg w-[300px]'
-              onClick={() => handleNavigation('upload-assignment')} >
-
+              className='flex items-center px-12 py-4 bg-[#088395] text-white rounded-full shadow hover:bg-[#37B7C3] transition duration-200 group text-lg w-[300px]'
+              onClick={() => handleNavigation('upload-assignment')}
+            >
               <PencilRuler className="mr-3 text-[#ffffff]" />
               Upload Assignment
             </button>
             <button
-              className='flex items-center px-12 py-4 bg-[#1F316F] text-white rounded-full shadow hover:bg-[#1A4870] transition duration-200 group text-lg w-[300px]'
-              onClick={() => handleNavigation('upload-quiz')} 
+              className='flex items-center px-12 py-4 bg-[#088395] text-white rounded-full shadow hover:bg-[#37B7C3] transition duration-200 group text-lg w-[300px]'
+              onClick={() => handleNavigation('upload-quiz')}
             >
               <FileCheck className="mr-3 text-[#ffffff]" />
               Upload Quiz

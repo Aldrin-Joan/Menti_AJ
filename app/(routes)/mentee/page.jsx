@@ -1,8 +1,8 @@
 import React from 'react'
 import Sidenav from '@/app/_component/mentee_dash/Sidenav'
-import Maincontent from '@/app/_component/mentee_dash/Maincontent'
 import Calendar from '@/app/_component/mentee_dash/Calendar'
-import Navbar from '@/app/_component/Home/navbar'
+import Navbar from '@/app/_component/Home/Navbar'
+import MenteeMaincontent from '@/app/_component/mentee_dash/MenteeMaincontent'
 
 function page() {
   return (
@@ -10,7 +10,7 @@ function page() {
       <Navbar/>
       <div className='container mx-auto flex mt-6'>
         <Sidenav/>
-        <Maincontent/>
+        <MenteeMaincontent/>
         <Calendar/>
       </div>
     </div>
