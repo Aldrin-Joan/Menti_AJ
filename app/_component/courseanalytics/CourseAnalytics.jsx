@@ -1,4 +1,4 @@
-"use client";
+  "use client";
 
 import React, { useState } from 'react';
 import { Bar, Pie } from 'react-chartjs-2';

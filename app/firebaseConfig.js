@@ -3,13 +3,13 @@ import { initializeApp } from "firebase/app";
 import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAwtnDFb6bnFlTFEqQjPkGbY6-35letpuQ",
-  authDomain: "dc-menti-db.firebaseapp.com",
-  projectId: "dc-menti-db",
-  storageBucket: "dc-menti-db.appspot.com",
-  messagingSenderId: "327724393071",
-  appId: "1:327724393071:web:5736d0e581c458196f239a",
-  measurementId: "G-RYZPTEP295"
+  apiKey: "AIzaSyBtusvfeh1CIi90BLaLuIp9qkyH7OL2flI",
+  authDomain: "menti-vitb.firebaseapp.com",
+  projectId: "menti-vitb",
+  storageBucket: "menti-vitb.appspot.com",
+  messagingSenderId: "15157943816",
+  appId: "1:15157943816:web:4f49eebfc73aed746afbbd",
+  measurementId: "G-XP2TR3QSXY"
 };
 
 const app = initializeApp(firebaseConfig);
